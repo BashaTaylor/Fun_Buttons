@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif, "Segoe UI Emoji", "Noto Color Emoji";
+    padding-left: 1.7rem;
+    padding-right: 1.5rem;
+    background-color: #333;
+    color: rgb(42, 163, 54);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+}
+
+h1 {
+    padding-top: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Center the content horizontally */
+}
+
+button {
+    font-size: 2rem;
+    padding: 1rem;
+    border-radius: 25px;
+    margin: 7px;
+}
+
+.mute-btn {
+    color: white;
+    padding:8px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 250px;
+    height: 70px;
+    display: inline-block;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, #b0d6f6, #1982d2, #2626fa);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s, transform 0.2s, background-color 0.2s ease;
+}
+
+.mute-btn:hover {
+    color: black;
+    font-size: 25px;
+    background: linear-gradient(to bottom, #eff1f2, #91dfed, #46b6c5);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+}
+
+.result-container {
+    margin-top: 30px;
+    width: 88%;
+    color: #333;
+    text-shadow: 7px 8px 7px rgba(94, 91, 91, 0.802);
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.result-label {
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.output {
+    margin-top: 30px;
+}
+
+/* Styles for the emoji container */
+.emoji {
+    display: flex;
+    justify-content: center;
+    font-size: 180px;  /* Larger size for emojis */
+    text-shadow: 7px 8px 7px rgba(94, 91, 91, 0.802);
+    width: 100%;
+}
+
