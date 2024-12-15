@@ -9,7 +9,69 @@
 </head>
 
 <body>
+    <div class="container"><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="stylesheet" rel="stylesheet" href="style.css">
+    <title>Mute Buttons</title>
+</head>
+
+<body>
     <div class="container">
+        <div class="buttons">
+            <h1>Select a Button</h1>
+
+            <button type="button" class="mute-btn" onclick="showResult('MEGA MUTE')">MEGA MUTE</button>
+            <button type="button" class="mute-btn" onclick="showResult('Mute')">Mute</button>
+            <button type="button" class="mute-btn" onclick="showResult('Delete')">Delete</button>
+            <button type="button" class="mute-btn" onclick="showResult('Pause')">Pause</button>
+            <button type="button" class="mute-btn" onclick="showResult('I Have a Question')">I Have a Question</button>
+            <button type="button" class="mute-btn" onclick="showResult('Me Me Me')">Me Me Me</button>
+            <button type="button" class="mute-btn" onclick="showResult('Zip It')">Zip It</button>
+            <button type="button" class="mute-btn" onclick="showResult('Cement It')">Cement It</button>
+            <button type="button" class="mute-btn" onclick="showResult('Shut It')">Shut It</button>
+            <button type="button" class="mute-btn" onclick="showResult('No One Cares')">No One Cares</button>
+            <button type="button" class="mute-btn" onclick="showResult('Need my Meds')">I Need My Meds</button>
+            <button type="button" class="mute-btn" onclick="showResult('Chop Chop')">Chop Chop</button>
+            <button type="button" class="mute-btn" onclick="showResult('Keep Your Pants On')">Keep Your Pants On</button>
+            <button type="button" class="mute-btn" onclick="showResult('The 100 Club')">The 100 Club</button>
+            <button type="button" class="mute-btn" onclick="showResult('Need Red Wine')">I Need Red Wine</button>
+            <button type="button" class="mute-btn" onclick="showResult('Bite Me')">Bite Me</button>
+            <button type="button" class="mute-btn" onclick="showResult('No Tea for You')">No Tea for You</button>
+            <button type="button" class="mute-btn" onclick="showResult('In Here-Out There')">👂⬅️In Here-Out There ➡️👂</button>
+            <button type="button" class="mute-btn" onclick="showResult('Is it 6:00PM yet?')">Is it 6:00PM yet?</button>
+        </div>
+        <div class="output">
+            <div class="result-label">Result:</div>
+
+            <div class="result-container" id="result"></div>
+
+            <!-- Add Emoji div below the result div, without label -->
+            <div id="emoji" class="emoji"></div>
+        </div>
+    </div>
+
+    <script>
+        // Expanded array of emojis
+        const emojis = [
+            '😶', '🤐', '⏸️', '🚨','😝','🙃','😉','😱','😫','🥳','💯','😩','😭','🚫','😬','🔚', '💅', '❓','🐵', '🙋', '🤫', '🧱', "🤩", "😜", "😇",'💓','🙉','🎻','👍', "🥳", "🤪", '🙈','🙏','😒', '😊', '😂','🤪', '😎', '🤖', '🦄', '🔥', '💧', '🌈', '🌟', '⚡', '✨', '🌙', '💡', '🛠️', '🍕', "🥺", "😍", '🎉','☠️','🐻','🙊','🐼', '🍷', '🍵','🤕','💛','🎅','🤦‍♀',,'🙅','🥂','🎂', '🕕'          
+        ];
+
+        function showResult(resultText) {
+            // Pick a random emoji from the array
+            const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+
+            // Set the result to the resultText and display the corresponding random emoji
+            document.getElementById("result").innerHTML = resultText;
+            document.getElementById("emoji").innerHTML = randomEmoji;
+        }
+    </script>
+</body>
+
+</html>
         <div class="buttons">
             <h1>Select a Button</h1>
 
